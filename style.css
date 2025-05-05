@@ -114,6 +114,26 @@ body {
     opacity: 0.2;
   }
 }
+/* Position logo at the top-left */
+header {
+  position: relative;
+  padding: 1rem;
+}
+
+/* Logo base styling with green glow */
+.site-logo {
+  height: 60px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 0 5px #00ff00);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Neon effect on hover */
+.site-logo:hover {
+  filter: drop-shadow(0 0 8px #00ff00) drop-shadow(0 0 16px #00ff00);
+  transform: scale(1.05);
+}
 
 /* Searchbar */
 .searchbar {
